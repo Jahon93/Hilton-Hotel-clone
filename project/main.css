@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+ body {
+     line-height: 1.4;
+     color: black;
+
+ }
+img {
+    width: 100px;
+    display: block;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* Header*/
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 4) rgba(0, 0, 0, 7));
+    background-image: url(./images/art-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .logo a {
+    color:#fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: Playfair;
+    letter-spacing: 1px;
+
+}
+.navbar-nav {
+    padding: 0.8rem 0 0.2rem 0;
+}
+.navbar-nav a {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover {
+    opacity: 0.7;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(48, 43, 43);
+    margin: 9%;
+}
+.banner-title {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-family: "Roboto";
+    color: #fff;
+       
+}
+.banner-title span {
+    font-family: Playfair;
+    color: rgb(41, 28, 28);
+    
+}
+.banner p{
+    padding: 0.5rem 0 1rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: "Roboto";
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+.search-input {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn {
+    width: 40px;
+    font-size: 1.2rem;
+    color: black;
+    border:none;
+    background-color: transparent;
+    outline:none;
+    cursor: pointer;
+}
+/* End of Styling header*/
+
+/*Start of Design*/
+.design {
+    padding: 4.5rem 0;
+}
+
+.title {
+    text-align: center;
+    padding: 1rem 0;
+}
+.design-title h2 {
+    font-family: "Playfair";
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    color: #984045;
+    cursor: pointer;
+}
+.design-title h2:hover {
+    color: rgb(0, 0, 0, 0.4);
+}
+.design-title p {
+    padding-bottom: 0.9rem;
+    font-family: "Roboto";
+    font-size: 1re;
+    letter-spacing: 1px;
+    color: #99585b;
+}
+.design-content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.design-item {
+    margin: 0;
+    cursor: pointer;
+}
+.design-img {
+    position: relative;
+    overflow: hidden;
+    
+}
+.design-img img {
+    width: 100%;
+    height: 250px;
+
+    
+}
+.design-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.2);
+}
+.design-img img{
+    transition: all 0.9s;
+}
+.design-item:hover img {
+    transform: scale(1.1);
+}
+.design-img span:first-of-type {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 10px;
+    left:10px;
+    padding: 0.25rem 1rem;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.4);
+}
+.design-img span:last-of-type {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title {
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.design-title a {
+    color:black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Playfair;
+    letter-spacing: 2px;
+}
+/* End of Design styling */
+
+/* Start of Branch styling */
+.branch {
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.branch-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.brach-img {
+    position: relative;
+}
+.branch-img img {
+    width: 100%;
+    height: 250px;
+}
+.branch-img span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.branch-text {
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.branch-text span {
+    font-weight: 300;
+    display: block;
+    padding-bottom: .5rem;
+}
+.branch-title h2 {
+    font-family: "Playfair";
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    color: #984045;
+    cursor: pointer;
+    text-align: center;
+}
+.branch-title h2:hover {
+    color: rgb(0, 0, 0, 0.4);
+}
+.branch-title p {
+    padding-bottom: 0.9rem;
+    font-family: Roboto;
+    font-size: 1re;
+    letter-spacing: 1px;
+    color: #99585b;
+    text-align: center;
+}
+.branch-text a {
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: .55rem 1.2rem;
+    
+}
+.branch-text a:hover {
+    background-color: rgb(48, 42, 42);
+}
+/* Start of About styling */
+.about {
+    padding: 4.5rem 0;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+}
+.me {
+    width: 80%;
+    height: 500px;
+    box-sizing:content-box;
+}
+.title h2 {
+    font-size: 3rem;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+}
+.about-text {
+    margin: 2rem 0;
+}
+.about-text p {
+    font-size: 1.1rem;
+    padding: 1.5rem 0;
+    opacity: .8;
+}
+/* End of About styling */
+
+/* Beginning of Footer*/
+.footer {
+    background-color: rgb(56, 52, 52);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+ }
+
+.social-network {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-network a {
+    border: 2px solid #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all .5s ease;
+}
+.social-network a:hover {
+    background-color: rgb(117, 112, 112);
+}
+
+/* Ending of Footer*/
